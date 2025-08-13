@@ -20,6 +20,7 @@
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            overflow-x: hidden; /* Correction for the layout bug */
         }
         .hero-bg {
             background: linear-gradient(to right, #6366f1, #a855f7, #ec4899);
@@ -74,39 +75,39 @@
 <body class="bg-gray-100">
 
     <!-- Sticky Header Offer -->
-    <div class="bg-red-600 text-white text-center py-2 font-bold uppercase sticky top-0 z-50">
+    <div class="bg-red-600 text-white text-center py-2 font-bold uppercase sticky top-0 z-50 text-sm sm:text-base">
         Oferta Especial Somente Hoje!
     </div>
 
     <!-- Hero Section -->
     <section class="hero-bg text-white text-center py-12 px-4">
         <div class="container mx-auto">
-            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider mb-4">A Diversão Triplicou!</h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-wider mb-4">A Diversão Triplicou!</h1>
             <p class="text-lg md:text-2xl font-light mb-6">Leve para casa o Kit de Colorir Digital com os personagens mais amados de todos os tempos!</p>
             
             <!-- Book Covers -->
-            <div class="flex flex-wrap justify-center items-center gap-8 my-10">
+            <div class="flex flex-wrap justify-center items-center gap-4 sm:gap-8 my-10">
                 <!-- Chaves Book -->
-                <div class="book-cover bg-white p-4 rounded-lg shadow-2xl w-48 md:w-64">
+                <div class="book-cover bg-white p-2 sm:p-4 rounded-lg shadow-2xl w-32 sm:w-48 md:w-64">
                     <img src="https://i.imgur.com/5HhBt5u.png" alt="Livro de colorir do Chaves" class="w-full h-auto rounded" onerror="this.onerror=null;this.src='https://placehold.co/300x400/f59e0b/ffffff?text=Chaves';">
-                    <p class="text-black text-center font-bold mt-2">Chaves e sua Turma</p>
+                    <p class="text-black text-center font-bold mt-2 text-sm sm:text-base">Chaves e sua Turma</p>
                 </div>
                 <!-- Scooby-Doo Book -->
-                <div class="book-cover bg-white p-4 rounded-lg shadow-2xl w-48 md:w-64">
+                <div class="book-cover bg-white p-2 sm:p-4 rounded-lg shadow-2xl w-32 sm:w-48 md:w-64">
                     <img src="https://i.imgur.com/DO9Mo1h.png" alt="Livro de colorir do Scooby-Doo" class="w-full h-auto rounded" onerror="this.onerror=null;this.src='https://placehold.co/300x400/10b981/ffffff?text=Scooby-Doo';">
-                    <p class="text-black text-center font-bold mt-2">Scooby-Doo.</p>
+                    <p class="text-black text-center font-bold mt-2 text-sm sm:text-base">Scooby-Doo.</p>
                 </div>
                 <!-- Tom & Jerry Book -->
-                <div class="book-cover bg-white p-4 rounded-lg shadow-2xl w-48 md:w-64">
+                <div class="book-cover bg-white p-2 sm:p-4 rounded-lg shadow-2xl w-32 sm:w-48 md:w-64">
                     <img src="https://i.imgur.com/jWcZDHC.png" alt="Livro de colorir do Tom e Jerry" class="w-full h-auto rounded" onerror="this.onerror=null;this.src='https://placehold.co/300x400/3b82f6/ffffff?text=Tom+%26+Jerry';">
-                    <p class="text-black text-center font-bold mt-2">Tom & Jerry</p>
+                    <p class="text-black text-center font-bold mt-2 text-sm sm:text-base">Tom & Jerry</p>
                 </div>
             </div>
 
             <p class="text-xl md:text-3xl font-bold mb-4">De <span class="line-through">R$ 59,90</span> por apenas:</p>
-            <p class="text-5xl md:text-7xl font-extrabold mb-6">R$ 14,90</p>
+            <p class="text-5xl sm:text-6xl md:text-7xl font-extrabold mb-6">R$ 14,90</p>
             
-            <a href="https://pay.cakto.com.br/37nrwk9_523458" class="cta-button bg-yellow-400 text-gray-900 font-bold py-4 px-10 rounded-full text-xl md:text-2xl uppercase inline-block">
+            <a href="https://pay.cakto.com.br/37nrwk9_523458" class="cta-button bg-yellow-400 text-gray-900 font-bold py-3 px-8 sm:py-4 sm:px-10 rounded-full text-lg sm:text-xl md:text-2xl uppercase inline-block">
                 Garantir meu Kit com Desconto!
             </a>
             <p class="mt-4 text-sm">Acesso imediato e vitalício!</p>
@@ -114,9 +115,9 @@
     </section>
 
     <!-- Kit Mockup Section -->
-    <section class="py-16 bg-white">
+    <section class="py-12 sm:py-16 bg-white">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Veja o Kit Completo que Você Vai Receber!</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-8">Veja o Kit Completo que Você Vai Receber!</h2>
             <div class="flex justify-center">
                 <img src="https://i.imgur.com/FprKBNk.png" alt="Mockup do kit completo com os 3 livros de colorir" class="rounded-lg shadow-2xl max-w-full h-auto w-full md:w-3/4 lg:w-1/2" onerror="this.onerror=null;this.src='https://placehold.co/800x450/e2e8f0/333333?text=Mockup+do+Kit+Completo';">
             </div>
@@ -124,30 +125,30 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-12 sm:py-16 bg-gray-100">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Por que este kit é perfeito para você?</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-12">Por que este kit é perfeito para você?</h2>
             <div class="flex flex-wrap justify-center gap-8">
                 <!-- Benefit 1 -->
-                <div class="max-w-xs p-6 bg-white rounded-lg shadow-lg">
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs p-6 bg-white rounded-lg shadow-lg">
                     <div class="text-5xl text-indigo-500 mb-4">🎨</div>
                     <h3 class="text-xl font-bold mb-2">Mais de 150 Desenhos</h3>
                     <p class="text-gray-600">Muitas cenas e personagens para colorir, garantindo horas de entretenimento.</p>
                 </div>
                 <!-- Benefit 2 -->
-                <div class="max-w-xs p-6 bg-white rounded-lg shadow-lg">
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs p-6 bg-white rounded-lg shadow-lg">
                     <div class="text-5xl text-pink-500 mb-4">👨‍👩‍👧‍👦</div>
                     <h3 class="text-xl font-bold mb-2">Diversão em Família</h3>
                     <p class="text-gray-600">Uma atividade nostálgica e criativa para unir todas as gerações.</p>
                 </div>
                 <!-- Benefit 3 -->
-                <div class="max-w-xs p-6 bg-white rounded-lg shadow-lg">
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs p-6 bg-white rounded-lg shadow-lg">
                     <div class="text-5xl text-green-500 mb-4">🖨️</div>
                     <h3 class="text-xl font-bold mb-2">Imprima Quantas Vezes Quiser</h3>
                     <p class="text-gray-600">Receba os arquivos em alta qualidade e imprima para colorir no papel.</p>
                 </div>
                  <!-- Benefit 4 -->
-                <div class="max-w-xs p-6 bg-white rounded-lg shadow-lg">
+                <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 max-w-xs p-6 bg-white rounded-lg shadow-lg">
                     <div class="text-5xl text-blue-500 mb-4">⚡</div>
                     <h3 class="text-xl font-bold mb-2">Acesso Imediato</h3>
                     <p class="text-gray-600">Compre e receba o link para download na mesma hora no seu email, sem espera!</p>
@@ -157,10 +158,10 @@
     </section>
 
     <!-- What you'll get Section -->
-    <section class="py-16 bg-white">
+    <section class="py-12 sm:py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">O que você vai receber:</h2>
-            <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-xl shadow-2xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">O que você vai receber:</h2>
+            <div class="max-w-2xl mx-auto bg-gray-50 p-6 sm:p-8 rounded-xl shadow-2xl">
                 <ul class="space-y-4">
                     <li class="flex items-start">
                         <span class="text-green-500 text-2xl mr-4">✔</span>
@@ -203,85 +204,26 @@
     </section>
 
     <!-- Illustration Samples Section -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-12 sm:py-16 bg-gray-100">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Uma Pequena Amostra do que te Espera!</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-12">Uma Pequena Amostra do que te Espera!</h2>
             
             <!-- Swiper for samples -->
             <div class="swiper-container sample-swiper max-w-5xl mx-auto relative">
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/VThtQy8.png" alt="Amostra de ilustração do Chaves" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                           <img src="https://i.imgur.com/NxzNO1f.png" alt="Amostra de ilustração do Scooby-Doo" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                           <img src="https://i.imgur.com/I5i4Dtm.png" alt="Amostra de ilustração do Tom e Jerry" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 4 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/QD0C5eg.png" alt="Amostra de ilustração do Chaves" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 5 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/xl9ma26.png" alt="Amostra de ilustração do Scooby-Doo" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 6 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/jsBQiZB.png" alt="Amostra de ilustração do Tom e Jerry" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 7 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/ho2nkCp.png" alt="Amostra de ilustração do Chaves" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 8 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/AiF6BXM.png" alt="Amostra de ilustração do Scooby-Doo" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 9 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/Wb52UnH.png" alt="Amostra de ilustração do Tom e Jerry" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 10 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/Ad8ZdV3.png" alt="Amostra de ilustração do Chaves" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 11 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/QyTr8k4.png" alt="Amostra de ilustração do Scooby-Doo" class="w-full h-auto rounded">
-                        </div>
-                    </div>
-                     <!-- Slide 12 -->
-                    <div class="swiper-slide">
-                        <div class="bg-white p-2 rounded-lg shadow-lg">
-                            <img src="https://i.imgur.com/3lhpHdH.png" alt="Amostra de ilustração do Tom e Jerry" class="w-full h-auto rounded">
-                        </div>
-                    </div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/VThtQy8.png" alt="Amostra de ilustração do Chaves" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/NxzNO1f.png" alt="Amostra de ilustração do Scooby-Doo" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/I5i4Dtm.png" alt="Amostra de ilustração do Tom e Jerry" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/QD0C5eg.png" alt="Amostra de ilustração do Chaves" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/xl9ma26.png" alt="Amostra de ilustração do Scooby-Doo" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/jsBQiZB.png" alt="Amostra de ilustração do Tom e Jerry" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/ho2nkCp.png" alt="Amostra de ilustração do Chaves" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/AiF6BXM.png" alt="Amostra de ilustração do Scooby-Doo" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/Wb52UnH.png" alt="Amostra de ilustração do Tom e Jerry" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/Ad8ZdV3.png" alt="Amostra de ilustração do Chaves" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/QyTr8k4.png" alt="Amostra de ilustração do Scooby-Doo" class="w-full h-auto rounded"></div></div>
+                    <div class="swiper-slide"><div class="bg-white p-2 rounded-lg shadow-lg"><img src="https://i.imgur.com/3lhpHdH.png" alt="Amostra de ilustração do Tom e Jerry" class="w-full h-auto rounded"></div></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination !relative !bottom-0 mt-8"></div>
@@ -290,43 +232,25 @@
                 <div class="swiper-button-prev"></div>
             </div>
 
-            <a href="https://pay.cakto.com.br/37nrwk9_523458" class="cta-button mt-12 bg-yellow-400 text-gray-900 font-bold py-4 px-10 rounded-full text-xl md:text-2xl uppercase inline-block">
+            <a href="https://pay.cakto.com.br/37nrwk9_523458" class="cta-button mt-12 bg-yellow-400 text-gray-900 font-bold py-3 px-8 sm:py-4 sm:px-10 rounded-full text-lg sm:text-xl md:text-2xl uppercase inline-block">
                 Quero Colorir Todos Eles!
             </a>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 bg-white">
+    <section class="py-12 sm:py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Quem já comprou, amou! ❤️</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">Quem já comprou, amou! ❤️</h2>
             <!-- Swiper -->
             <div class="swiper-container testimonial-swiper max-w-4xl mx-auto relative">
                 <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide flex justify-center items-center p-4">
-                        <img src="https://i.imgur.com/l5dwbbX.png" alt="Depoimento de cliente em imagem 1" class="rounded-lg shadow-lg max-h-[500px] w-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+1';">
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide flex justify-center items-center p-4">
-                        <img src="https://i.imgur.com/KpI81GJ.png" alt="Depoimento de cliente em imagem 2" class="rounded-lg shadow-lg max-h-[500px] w-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+2';">
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide flex justify-center items-center p-4">
-                        <img src="https://i.imgur.com/HbylSKe.png" alt="Depoimento de cliente em imagem 3" class="rounded-lg shadow-lg max-h-[500px] w-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+3';">
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide flex justify-center items-center p-4">
-                        <img src="https://i.imgur.com/Tv7mdbD.png" alt="Depoimento de cliente em imagem 4" class="rounded-lg shadow-lg max-h-[500px] w-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+4';">
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="swiper-slide flex justify-center items-center p-4">
-                        <img src="https://i.imgur.com/lv6T9S2.png" alt="Depoimento de cliente em imagem 5" class="rounded-lg shadow-lg max-h-[500px] w-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+5';">
-                    </div>
-                    <!-- Slide 6 -->
-                    <div class="swiper-slide flex justify-center items-center p-4">
-                        <img src="https://i.imgur.com/qhK0S9S.png" alt="Depoimento de cliente em imagem 6" class="rounded-lg shadow-lg max-h-[500px] w-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+6';">
-                    </div>
+                    <div class="swiper-slide flex justify-center items-center p-4"><img src="https://i.imgur.com/l5dwbbX.png" alt="Depoimento de cliente em imagem 1" class="rounded-lg shadow-lg w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+1';"></div>
+                    <div class="swiper-slide flex justify-center items-center p-4"><img src="https://i.imgur.com/KpI81GJ.png" alt="Depoimento de cliente em imagem 2" class="rounded-lg shadow-lg w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+2';"></div>
+                    <div class="swiper-slide flex justify-center items-center p-4"><img src="https://i.imgur.com/HbylSKe.png" alt="Depoimento de cliente em imagem 3" class="rounded-lg shadow-lg w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+3';"></div>
+                    <div class="swiper-slide flex justify-center items-center p-4"><img src="https://i.imgur.com/Tv7mdbD.png" alt="Depoimento de cliente em imagem 4" class="rounded-lg shadow-lg w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+4';"></div>
+                    <div class="swiper-slide flex justify-center items-center p-4"><img src="https://i.imgur.com/lv6T9S2.png" alt="Depoimento de cliente em imagem 5" class="rounded-lg shadow-lg w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+5';"></div>
+                    <div class="swiper-slide flex justify-center items-center p-4"><img src="https://i.imgur.com/qhK0S9S.png" alt="Depoimento de cliente em imagem 6" class="rounded-lg shadow-lg w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/350x600/ffffff/333?text=Print+Depoimento+6';"></div>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination !relative !bottom-0 mt-8"></div>
@@ -338,12 +262,12 @@
     </section>
 
     <!-- Final CTA Section -->
-    <section id="comprar" class="py-20 bg-gray-800 text-white">
+    <section id="comprar" class="py-12 sm:py-20 bg-gray-800 text-white">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-5xl font-black mb-4">Não perca essa chance!</h2>
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black mb-4">Não perca essa chance!</h2>
             <p class="text-lg md:text-xl mb-8">Garanta 3 livros de colorir pelo preço de 1. A promoção é por tempo limitado!</p>
             
-            <div class="bg-white text-gray-900 max-w-lg mx-auto p-8 rounded-xl shadow-2xl">
+            <div class="bg-white text-gray-900 max-w-lg mx-auto p-6 sm:p-8 rounded-xl shadow-2xl">
                  <p class="text-xl font-bold mb-2">OFERTA ESPECIAL</p>
                  <p class="text-4xl font-extrabold text-indigo-600 mb-1">R$ 14,90</p>
                  <p class="text-gray-500 line-through mb-4">DE R$ 59,90</p>
@@ -356,9 +280,9 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-16 bg-gray-100">
+    <section class="py-12 sm:py-16 bg-gray-100">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Perguntas Frequentes</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">Perguntas Frequentes</h2>
             <div class="max-w-3xl mx-auto space-y-4">
                 <details class="bg-white p-6 rounded-lg shadow-md">
                     <summary class="font-bold cursor-pointer">Como vou receber o produto?</summary>
@@ -441,8 +365,9 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            slidesPerView: 2,
-            spaceBetween: 10,
+            slidesPerView: 1.5,
+            centeredSlides: true,
+            spaceBetween: 15,
             breakpoints: {
                 640: {
                     slidesPerView: 3,
